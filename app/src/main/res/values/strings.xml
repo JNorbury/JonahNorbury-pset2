@@ -7,4 +7,5 @@
     <string name="number_words_left_text_view">X Number Words Left</string>
     <string name="OK_button_text">OK</string>
     <string name="hint_type_edit_text">fillHintNameHere</string>
+    <string name="story_name_text_view">Here is your Story</string>
 </resources>

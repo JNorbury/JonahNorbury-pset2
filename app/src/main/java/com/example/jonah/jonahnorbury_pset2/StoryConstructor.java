@@ -29,7 +29,7 @@ public class StoryConstructor extends AppCompatActivity {
         setContentView(R.layout.story_layout);
         try {
             resources = getResources();
-            InputStream iS = resources.openRawResource(R.raw.madlib0_simple);
+            InputStream iS = resources.openRawResource(R.raw.madlib1_tarzan);
             S = new Story(iS);
 
             number_words = (TextView) findViewById(R.id.textView3);
@@ -50,12 +50,14 @@ public class StoryConstructor extends AppCompatActivity {
             S.fillInPlaceholder(e.getText().toString());
 
             if (S.isFilledIn()) {
-                Intent getStoryResultScreen = new Intent(this,
-                        storyScreen.class);
+                Intent getStoryResultScreen = new Intent(this, storyScreen.class);
+                getStoryResultScreen.putExtra("Story", S.toString());
                 startActivity(getStoryResultScreen);
                 finish();
             }
             else {
+                e.setText("");
+                e.setHint(S.getNextPlaceholder());
                 number_words.setText(S.getPlaceholderRemainingCount() + " Word(s) left.");
             }
         }
@@ -63,8 +65,5 @@ public class StoryConstructor extends AppCompatActivity {
             Toast t = Toast.makeText(this, "no word given", Toast.LENGTH_LONG);
             t.show();
         }
-
-
-
     }
 }
