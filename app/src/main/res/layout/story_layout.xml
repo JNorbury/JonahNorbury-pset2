@@ -13,19 +13,37 @@
         android:textSize="40sp"
         android:id="@+id/textView2" />
 
+    <TextView
+        android:text="@string/number_words_left_text_view"
+        android:layout_width="match_parent"
+        android:id="@+id/textView3"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        android:layout_height="wrap_content" />
+
     <LinearLayout
         android:orientation="horizontal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp">
 
-        <TextView
-            android:text="@string/number_words_left_text_view"
-            android:layout_width="match_parent"
-            android:id="@+id/textView3"
-            android:textSize="16sp"
-            android:textAlignment="center"
-            android:layout_weight="1"
-            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="@string/hint_type_edit_text"
+            android:ems="10"
+            android:id="@+id/editText"
+            android:layout_weight="1" />
+
+        <Button
+            android:text="@string/OK_button_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button2"
+            android:onClick="onClickNewWord"
+            android:layout_weight="1" />
     </LinearLayout>
 
 </LinearLayout>

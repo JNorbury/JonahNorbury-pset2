@@ -15,12 +15,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity android:name=".StoryConstructor">
             android:label="getStory"
             android:theme="@style/AppTheme"
         </activity>
-
+        <activity android:name=".storyScreen"></activity>
     </application>
 
 </manifest>

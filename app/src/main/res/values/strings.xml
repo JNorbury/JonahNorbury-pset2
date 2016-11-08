@@ -4,5 +4,7 @@
     <string name="start_rules_text_view">Welcome to Mad Libs! There is only one rule to follow in Mad Libs: Fill in each of the blank spaces with the appropriate type of word. Each blank notes what kind of word goes there, such as a noun, verb or adjective. Outside of that, the choice of word you use is entirely up to you, no matter how ridiculous it is. In fact, the more ridiculous the word, the more hilarious the outcome!</string>
     <string name="radical_story_creator_text_view">Fill in the Words to make a RADICAL story!</string>
     <string name="word_s_leftwords_left_creator_text_view">Word(s) Left!</string>
-    <string name="number_words_left_text_view">TextView</string>
+    <string name="number_words_left_text_view">X Number Words Left</string>
+    <string name="OK_button_text">OK</string>
+    <string name="hint_type_edit_text">fillHintNameHere</string>
 </resources>
