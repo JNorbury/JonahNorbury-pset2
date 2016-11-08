@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_start"
     android:layout_width="match_parent"
@@ -11,7 +12,28 @@
     tools:context="com.example.jonah.jonahnorbury_pset2.StartActivity">
 
     <TextView
+        android:text="@string/start_rules_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:id="@+id/textView"
+        android:layout_alignTop="@+id/button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="56dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/madlibs"
+        android:id="@+id/imageView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="@string/start_game_button_view"
+        android:onClick="onClickButtonStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>
