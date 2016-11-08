@@ -29,7 +29,7 @@ public class StoryConstructor extends AppCompatActivity {
         setContentView(R.layout.story_layout);
         try {
             resources = getResources();
-            InputStream iS = resources.openRawResource(R.raw.madlib1_tarzan);
+            InputStream iS = resources.openRawResource(R.raw.madlib0_simple);
             S = new Story(iS);
 
             number_words = (TextView) findViewById(R.id.textView3);
