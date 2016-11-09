@@ -19,10 +19,9 @@ public class storyResult extends AppCompatActivity{
         Intent intent = getIntent();
         String s = intent.getStringExtra("Story");
 
-//        Toast t = Toast.makeText(this, "story loaded" + s, Toast.LENGTH_LONG);
-//        t.show();
-
         TextView story_place = (TextView) findViewById(R.id.textView4);
         story_place.setText(s);
     }
+
+
 }
