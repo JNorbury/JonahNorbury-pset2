@@ -20,7 +20,6 @@ import static android.R.id.list;
  */
 
 public class StoryConstructor extends AppCompatActivity {
-    private Resources resources;
     private Story S;
     private EditText e;
     private TextView number_words;
@@ -35,8 +34,7 @@ public class StoryConstructor extends AppCompatActivity {
 //        story is initiated, words remaining given, hint is set
         try {
 
-            resources = getResources();
-            S = new Story(resources.openRawResource(R.raw.madlib1_tarzan));
+            S = new Story(getResources().openRawResource(R.raw.madlib1_tarzan));
 
             number_words = (TextView) findViewById(R.id.textView3);
             number_words.setText(S.getPlaceholderRemainingCount() + getString(R.string.words_left_text_view));
