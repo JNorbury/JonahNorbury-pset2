@@ -9,17 +9,17 @@ public class StartActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_start);
 
     }
 
+//    button starts story constructor
     public void onClickButtonStart(View view) {
 
-        Intent getStoryStartScreen = new Intent(this,
-                StoryConstructor.class);
-
-        startActivity(getStoryStartScreen);
+        startActivity(new Intent(this, StoryConstructor.class));
         finish();
+
     }
 }

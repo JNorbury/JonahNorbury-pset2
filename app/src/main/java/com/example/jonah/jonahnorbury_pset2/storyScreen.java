@@ -10,16 +10,15 @@ import android.widget.Toast;
 public class storyScreen extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+//        story is extracted from intent and displayed
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_story_screen);
 
-        Intent intent = getIntent();
-        String s = intent.getStringExtra("Story");
-
         TextView story_place = (TextView) findViewById(R.id.textView4);
-        story_place.setText(s);
+        story_place.setText(getIntent().getStringExtra("Story"));
     }
 
+//    button to restart game with same story type
     public void onClickReturnHome(View view) {
 
         Intent intent = new Intent(this, StartActivity.class);
