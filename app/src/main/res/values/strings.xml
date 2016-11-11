@@ -10,4 +10,5 @@
     <string name="story_name_text_view">Here is your Story:</string>
     <string name="start_again_button_text">Start Again</string>
     <string name="blank_story_view_text">Blank for Purposes</string>
+    <string name="words_left_text_view">" Word(s) left."</string>
 </resources>

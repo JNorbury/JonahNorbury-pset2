@@ -39,7 +39,7 @@ public class StoryConstructor extends AppCompatActivity {
             S = new Story(resources.openRawResource(R.raw.madlib1_tarzan));
 
             number_words = (TextView) findViewById(R.id.textView3);
-            number_words.setText(S.getPlaceholderRemainingCount() + " Word(s) left.");
+            number_words.setText(S.getPlaceholderRemainingCount() + getString(R.string.words_left_text_view));
 
             e = (EditText) findViewById(R.id.editText);
             e.setHint(S.getNextPlaceholder());
